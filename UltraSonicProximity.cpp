@@ -17,5 +17,6 @@ int UltraSonicProximity::getDistanceInCM()
     digitalWrite(_trigPin, HIGH);
     delayMicroseconds(10);
     digitalWrite(_trigPin, LOW);   
-    return pulseIn(_echoPin, HIGH, 10000) / 58;
+    return pulseIn(_echoPin, HIGH, 25000) / 58;
 }
+
